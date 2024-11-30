@@ -678,31 +678,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 }
 </style>
+
+
 <!-- 页脚 -->
 <footer style="background-color: #f3f3f3; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
     <!-- 名片內容 -->
-    <div style="max-width: 400px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
-        <!-- 祥安生命有限公司文字替代名片照片 -->
-        <div class="company-logo">
-            <p>祥安生命有限公司</p>
-        </div>
-        
+    <div style="max-width: 400px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; display: flex; align-items: center;">
         <!-- 負責人圖片 -->
-        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin: 0 auto 10px;">
+        <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin-right: 20px;">
             <img src="IMG_8349.jpeg" alt="負責人照片" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        
-        <!-- 聯絡資訊 -->
-        <div style="margin-bottom: 15px;">
-            <p style="font-size: 16px; margin: 5px 0;"><strong>承辦人員：陳柏元</strong></p>
-            <p style="font-size: 16px; color: #007BFF; margin: 5px 0;">聯絡電話：0938-179-858</p>
-        </div>
-        
-        <!-- 按鈕區 -->
-        <div style="margin-top: 15px;">
-            <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">
-                生命禮儀、禮俗 免費諮詢
-            </a>
+
+        <!-- 文字部分 -->
+        <div style="flex: 1; text-align: left;">
+            <div class="company-logo">
+                <p>祥安生命有限公司</p>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <p style="font-size: 16px; margin: 5px 0;"><strong>承辦人員：陳柏元</strong></p>
+                <p style="font-size: 16px; color: #007BFF; margin: 5px 0;">聯絡電話：0938-179-858</p>
+            </div>
+            <!-- 按鈕區 -->
+            <div style="margin-top: 15px;">
+                <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">
+                    生命禮儀、禮俗 免費諮詢
+                </a>
+            </div>
         </div>
     </div>
 
@@ -717,31 +718,32 @@ document.addEventListener("DOMContentLoaded", () => {
 /* 設置自訂字體 - 使用 Google 字體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 
+/* 公司標誌部分樣式 */
 .company-logo {
-    text-align: center;
-    margin: 50px 0;
+    text-align: left;
+    margin: 0;
 }
 
 .company-logo p {
     font-family: 'Noto Serif TC', serif;
-    font-size: 3em;
+    font-size: 1.5em; /* 字體大小 */
     color: #333;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), 0 0 25px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     background: transparent;
-    padding: 3px 10px;
-    display: inline-block;
+    padding: 3px 0;
 }
 
-/* 響應式設計 - 手機螢幕 */
-@media (max-width: 600px) {
-    .company-logo p {
-        font-size: 2em;
-    }
-}
+/* 頁腳版權信息基礎樣式 */
+<!-- 版權信息 -->
+<div class="footer-info">
+    <p class="footer-text"><strong>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</strong></p>
+    <p class="footer-text"><strong>© 2024 張文秀先生訃告 | <span class="highlight">祥安生命</span> 版權所有</strong></p>
+</div>
 
+<style>
 /* 頁腳版權信息基礎樣式 */
 .footer-info {
     text-align: center;
@@ -750,12 +752,11 @@ document.addEventListener("DOMContentLoaded", () => {
     border-top: 1px solid #ddd;
     padding: 15px;
     margin-top: 20px;
-    box-sizing: border-box;
 }
 
 .footer-text {
     color: #333;
-    font-size: 14px;
+    font-size: 16px; /* 默認字體大小 */
     line-height: 1.6;
     margin: 5px 0;
     white-space: nowrap;
@@ -775,10 +776,11 @@ document.addEventListener("DOMContentLoaded", () => {
         padding: 10px;
     }
     .footer-text {
-        font-size: 14px;
+        font-size: 18px; /* 增大字體 */
     }
 }
-</style> 
+</style>
+</style>
                 
             
 
