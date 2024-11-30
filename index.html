@@ -709,25 +709,49 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <!-- 版權信息 -->
-<div style="margin-top: 20px; color: #333; font-size: 14px; text-align: center; line-height: 1.6; background-color: #f9f9f9; padding: 15px; border-top: 1px solid #ddd; font-family: 'ChenYu', serif; white-space: nowrap;">
-    <p style="font-weight: bold; margin: 5px 0;">承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</p>
-    <p style="font-weight: bold; margin: 5px 0;">© 2024 張文秀先生訃告 | <span style="color: #555;">祥安生命</span> 版權所有</p>
+<div class="footer-info">
+    <p class="footer-text"><strong>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</strong></p>
+    <p class="footer-text"><strong>© 2024 張文秀先生訃告 | <span class="highlight">祥安生命</span> 版權所有</strong></p>
 </div>
-    
-</footer>
 
-                <style>
-                    /* 手機顯示優化 */
+<style>
+/* 頁腳版權信息基礎樣式 */
+.footer-info {
+    text-align: center;
+    font-family: 'ChenYu', serif; /* 使用辰魚落雁體 */
+    background-color: #f9f9f9; /* 背景顏色 */
+    border-top: 1px solid #ddd; /* 分隔線 */
+    padding: 15px;
+    margin-top: 20px; /* 上方間距 */
+    box-sizing: border-box; /* 保證內邊距不超出範圍 */
+}
+
+.footer-text {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+    white-space: nowrap; /* 防止文字換行 */
+}
+
+.footer-text strong {
+    font-weight: bold;
+}
+
+.highlight {
+    color: #555; /* 高亮顯示的文字顏色 */
+}
+
+/* 響應式設計 - 手機螢幕 */
 @media (max-width: 600px) {
-    div {
-        font-size: 12px; /* 減小字體以適應小螢幕 */
-        padding: 10px;  /* 減少內邊距 */
+    .footer-info {
+        padding: 10px; /* 減少內邊距 */
     }
-    div p {
-        margin: 3px 0; /* 減少段落間距 */
+    .footer-text {
+        font-size: 12px; /* 更小字體 */
     }
-} 
-                </style>
+}
+</style>
             
 
 
