@@ -710,7 +710,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <!-- 版權信息 -->
     <div class="footer-info">
         <p class="footer-text"><strong>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</strong></p>
-        <p class="footer-text"><strong>© 2024 張文秀先生訃告 | <span class="highlight">祥安生命</span> 版權所有</strong></p>
+        <p class="footer-text"><strong>© 2024 張文秀先生訃告 | <span class="highlight">祥安生命有限公司</span> 版權所有</strong></p>
     </div>
 </footer>
 
@@ -735,19 +735,15 @@ document.addEventListener("DOMContentLoaded", () => {
     background: transparent;
     padding: 3px 0;
 }
+    
 
-/* 頁腳版權信息基礎樣式 */
-<!-- 版權信息 -->
-<div class="footer-info">
-    <p class="footer-text"><strong>承辦禮儀公司 祥安生命有限公司 ｜ 禮儀師：陳柏元</strong></p>
-    <p class="footer-text"><strong>© 2024 張文秀先生訃告 | <span class="highlight">祥安生命</span> 版權所有</strong></p>
-</div>
+/* 引入辰魚落雁體字體 */
+@import url('https://fonts.googleapis.com/css2?family=ChenYu&display=swap');
 
-<style>
 /* 頁腳版權信息基礎樣式 */
 .footer-info {
     text-align: center;
-    font-family: 'ChenYu', serif;
+    font-family: 'ChenYu', serif; /* 使用辰魚落雁體 */
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
     padding: 15px;
@@ -756,7 +752,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 .footer-text {
     color: #333;
-    font-size: 16px; /* 默認字體大小 */
+    font-size: 14px; /* 默認字體大小 */
     line-height: 1.6;
     margin: 5px 0;
     white-space: nowrap;
@@ -776,15 +772,11 @@ document.addEventListener("DOMContentLoaded", () => {
         padding: 10px;
     }
     .footer-text {
-        font-size: 18px; /* 增大字體 */
+        font-size: 16px; /* 稍微增大字體，避免過大 */
     }
 }
 </style>
-</style>
                 
-            
-
-
-   
+              
 </body>
 </html>
